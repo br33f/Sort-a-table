@@ -69,7 +69,7 @@ let minimumAge = () => {
   for (let i = 0; i < tr.length; i++) {
     let td = tr[i].getElementsByTagName("td")[1];
     if (td) {
-      if ((td.innerHTML) >= Number(filter)) {
+      if ((td.innerHTML) > Number(filter)) {
         tr[i].style.display = "";
       } else {
         tr[i].style.display = "none";
