@@ -1,3 +1,5 @@
+// Jak już używasz bootstrapa, to można zastanowić się czy nie dałoby się obejść bez customowych styli?
+
 body {
   background-color: rgb(252, 239, 252) !important;
 }
