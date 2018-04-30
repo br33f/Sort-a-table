@@ -12,16 +12,24 @@
 	</head>
 	<body>
 		<div class="container-fluid text-center">
+			// Może lepiej nakładać listenery na zdarzenie kliknięcia za pomocą JS'a ()?
 			<button class="btn btn-primary" onclick="sortTable(0)">Sort by name</button>
 			<button class="btn btn-primary" onclick="sortTable(1)">Sort by age</button>
 			<div class="input-group input-group-sm mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="inputGroup-sizing-sm">Enter minimum age</span>
 			  </div>
+			  // Tego poniżej nie za bardzo rozumiem
+			  // Po co to col-*-*, akurat nałożone na input?
+			  // Nie lepiej byłoby określić jeden raz rozmiar w jakimś kontenerze nadrzędnym?
+			  // BTW. Z tego co się orientuje to w boostrapie4 col-xs-* został zastąpiony przez col-*.
 			  <input type="number" id="inputAge" onkeyup="minimumAge()" class="form-control col-lg-2 col-xs-1" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+			  //                                 ^ o to lubią dopytywać, różnice pomiędzy onkeyup/down, a onchange
 			</div>
-
+			
 			<div id="app"></div>
+			
+			// Dodatkowo - możesz się zastanowić, czy nie fajniej byłoby gdyby zamiast przycisków do sortowania były strzałki w nagłówkach tabeli
 		</div>
 
 		<script src="./bundle.js"></script>
